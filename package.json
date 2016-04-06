@@ -1,0 +1,15 @@
+{
+  "name": "angular-xtra",
+  "version": "1.0.0",
+  "description": "A simple routes review exercise",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  }
+}
