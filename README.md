@@ -1,4 +1,4 @@
-#WebApp to Practice Rouotes in Angular.js
+#WebApp practicing Angular.js routing
 ###Setup local-server listening on Port 8000 using index.js file. 
 ###Created index.html file with an "ng-view" directive - Provided link to angular-route.min.js 
 ###Initialized Angular module controller.js file 
