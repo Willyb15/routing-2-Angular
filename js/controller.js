@@ -8,13 +8,15 @@ viewsApp.config(function($routeProvider){
 			controller: 'viewsController',
 			templateUrl: function($routeParams){
 				console.log($routeParams);
+				console.log($routeParams.anyNameYouWant);
 				return 'template' + $routeParams.anyNameYouWant + '.html';
+
 		}
 	});
 	
-	// $routeProvider.otherwise({
-	// 	redirectTo: ' '
-	// });
+	$routeProvider.otherwise({
+		redirectTo: ''
+	});
 });
 
 
@@ -26,3 +28,22 @@ viewsApp.controller('viewsController', function($scope, $location){
 		$location.path("/"+id);
 	};
 });
+
+
+// viewsApp.controller("viewsController", [
+//  '$scope', '$location', '$http', '$cookieStore', 
+//  function ($scope, $location, $http, $cookieStore) {
+// ​
+//   	var myGolfer = $cookieStore.get('myGolfer');
+//   	console.log(myGolfer);
+// ​
+// 	console.log($cookieStore);
+// 	$cookieStore.put('myGolfer','Zach');
+// 	console.log($cookieStore);
+// ​
+// ​
+// 	$scope.nextId = function(id){
+// 		console.log(id);
+// 		$location.path("/"+id);
+// 	}
+// } ] );
